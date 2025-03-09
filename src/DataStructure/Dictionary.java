@@ -1,6 +1,5 @@
 package DataStructure;
-
-import java.util.Arrays;
+import  java.util.Arrays;
 
 public class Dictionary<TKey, TValue> {
 
@@ -78,29 +77,27 @@ public class Dictionary<TKey, TValue> {
 
     }
 
-    class KeyValuePair<TKey, Tvalue> {
+   static  class KeyValuePair<TKey,Tvalue> {
         TKey key;
         Tvalue value;
-
+    
         public KeyValuePair(TKey key, Tvalue value) {
             this.key = key;
             this.value = value;
         }
-
+    
         public Tvalue getValue() {
             return value;
         }
-
+    
         public void setValue(Tvalue value) {
             this.value = value;
         }
-
+    
         public TKey getKey() {
             return key;
         }
-
-    }
-
+    }    
 }
 /*
  * Class Diagram =>

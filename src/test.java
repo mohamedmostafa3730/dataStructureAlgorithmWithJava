@@ -1,6 +1,4 @@
 
-import DataStructure.HashTable;
-
 public class test {
     public static void main(String[] args) {
         // Dictionary
@@ -26,20 +24,19 @@ public class test {
         // System.out.println("After Hashing with 64 => " + afterHas64);
         // System.out.println("=================");
 
-        HashTable<Integer, String> fMap = new HashTable<>();
-        fMap.Set(1, "mohamed");
-        fMap.Set(2, "Mostafa");
-        fMap.Set(3, "Ahmed");
-        fMap.Set(4, "ali");
-        fMap.Set(5, "mohamedMostafa");
+        // HashTable<Integer, String> fMap = new HashTable<>();
+        // fMap.Set(1, "mohamed");
+        // fMap.Set(2, "Mostafa");
+        // fMap.Set(3, "Ahmed");
+        // fMap.Set(4, "ali");
+        // fMap.Set(5, "mohamedMostafa");
         // fMap.Set(6, "mohamedMostafa");
         // fMap.Set(7, "mohamedMostafa");
         // fMap.Set(8, "mohamedMostafa");
-        // fMap.Set(9, "mohamedMostafa");
-        fMap.print();
-        System.out.println("=========");
-        System.out.println(fMap.get(5));
-        
+        // // fMap.Set(9, "mohamedMostafa");
+        // fMap.print();
+        // System.out.println("=========");
+        // System.out.println(fMap.get(5));
 
     }
 

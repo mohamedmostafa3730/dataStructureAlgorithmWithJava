@@ -1,17 +1,14 @@
-package DataStructure;
-
-import DataStructure.Dictionary.KeyValuePair;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 public class HashTable<TKey, TValue> {
-    private KeyValuePair<TKey, TValue>[] entries;
+    private Dictionary.KeyValuePair<TKey, TValue>[] entries;
     private int initialSize;
     private int entriesCount;
 
     public HashTable() {
         initialSize = 3;
-        entries = new KeyValuePair[initialSize];
+        entries = new Dictionary.KeyValuePair[initialSize];
         entriesCount = 0;
     }
 
@@ -51,7 +48,7 @@ public class HashTable<TKey, TValue> {
             System.out.println("invalid HashTable");
         }
         if (this.entries[hash] == null) {
-            KeyValuePair<TKey, TValue> newPair = new KeyValuePair<>(key, value);
+            Dictionary.KeyValuePair<TKey, TValue> newPair = new Dictionary.KeyValuePair<>(key, value);
             this.entries[hash] = newPair;
             this.entriesCount++;
         } else if (this.entries[hash].key == key) {
@@ -68,9 +65,9 @@ public class HashTable<TKey, TValue> {
 
         int newSize = this.entries.length * 2;
 
-        KeyValuePair<TKey, TValue>[] entriesCopy = Arrays.copyOf(this.entries, this.entries.length);
+        Dictionary.KeyValuePair<TKey, TValue>[] entriesCopy = Arrays.copyOf(this.entries, this.entries.length);
 
-        this.entries = new KeyValuePair[newSize];
+        this.entries = new Dictionary.KeyValuePair[newSize];
         int oldCount = this.entriesCount;
         this.entriesCount = 0;
 

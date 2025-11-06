@@ -1,5 +1,3 @@
-package DataStructure;
-
 import java.nio.charset.StandardCharsets;
 
 public class Hash {
